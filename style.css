@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(138, 138, 138);
+}
+
+/*  GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+
+/*****/
+
+.login-container {
+    -webkit-box-shadow: 1px 37px 52px -54px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 37px 52px -54px rgba(0,0,0,0.75);
+    box-shadow: 1px 37px 52px -54px rgba(0,0,0,0.75);
+    border-radius: 0.5rem;
+    width: 500px;
+    padding: 2rem 1rem;
+    background-color: rgb(230, 230, 230);
+    margin: 2rem auto;
+}
+
+.login-name,.outros-name {
+    display: flex;
+    align-items: center;
+}
+
+.login-name h2 {
+    color: rgb(68, 68, 68);
+    margin: 0 1rem 0 0;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-name .hr {
+    width: 75%;
+    height: 2px;
+    background-color: rgb(202, 202, 202);
+}
+
+.login {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    border-radius: 0.2rem;
+    border: 0;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+input::placeholder {
+    color: rgb(207, 207, 207);
+}
+
+input:focus {
+    outline: 1px solid gray;
+}
+
+form span {
+    color: rgb(78, 78, 78);
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login form button {
+    padding: 0.8rem 1rem;
+    border: 0;
+    transition: 0.1s;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-radius: 0.2rem;
+    background-color: rgb(59, 160, 255);
+}
+
+.login form button:active {
+    transform: scale(0.950);
+}
+
+.esqueceu-senha-name-cadastro {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-name a,.esqueceu-senha-name-cadastro a {
+    transition: 0.2s;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: rgb(59, 160, 255);
+    margin: 0 0.5rem;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    border: 1.5px solid rgb(59, 160, 255);
+    text-decoration: none;
+}
+
+.cadastro-name a:hover,.esqueceu-senha-name a:hover {
+    color: rgb(240, 240, 240);
+    margin: 0 0.5rem;
+    background-color: rgb(59, 160, 255);
+    border: 2px solid rgb(59, 160, 255);
+}
+
+.ou-name {
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.outros-name h2 {
+    color: rgb(68, 68, 68);
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.login-outros {
+    width: 100%;
+}
+
+.login-box:nth-child(2){
+    margin-top: 2rem;
+}
+
+.login-box {
+    transition: 100ms;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 2px solid rgb(175, 175, 175);
+    margin: 1rem 0;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.login-box:hover {
+    cursor: pointer;
+    transform: scale(0.990);
+    border: 2px solid rgb(59, 160, 255);
+    background-color: rgb(59, 160, 255);
+}
+
+.login-box:hover p,.login-box:hover i {
+    color: rgb(240, 240, 240);
+}
+
+.login-box i {
+    font-size: 1.5rem;
+    color: rgb(56, 135, 255);
+}
+
+.login-box p {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(56, 135, 255);
+}
+
+@media screen and (max-width: 520px){
+    .login-container {
+        top: 0;
+        left: 0;
+        margin: 2rem auto;
+        transform: none;
+        position: static;
+        width: 90%;
+    }
+
+    .cadastro-name a,.esqueceu-senha-name-cadastro a {
+        font-size: 0.7rem;
+    }
+}
